@@ -23,24 +23,25 @@ body {
 	z-index:2000000;
 }
 .image {
-  width: 40vmin;
-  position: absolute;
-  transform: translate(-50%, -50%);
+	width: 40vmin;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	draggable: "false"
 }
 .image[data-status="inactive"] {
-  opacity: 0;
-  transition: opacity 0.5s;
+	opacity: 0;
+	transition: opacity 0.5s;
 }
 
 .image[data-status="off"] {
-  opacity: 0;
-  transition: opacity 2s;
+	opacity: 0;
+	transition: opacity 2s;
 }
 
 .image[data-status="active"] {
-  display: block;
-  opacity:1;
-  transition: opacity 0.5s;
+	display: block;
+	opacity:1;
+	transition: opacity 0.5s;
 }
 .container {
 	width: 100%;
