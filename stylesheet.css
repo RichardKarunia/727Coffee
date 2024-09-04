@@ -1,0 +1,123 @@
+@font-face {
+	font-family: "manrope";
+	src: url("Manrope-Regular.ttf");
+}
+body {
+	background-color: #d07c32;
+	overflow-x: hidden;
+}
+.titleimage {
+	width: 98.9vw;
+	height: 100vh;
+}
+.title {
+	width: 98.9vw;
+	height: 100vh;
+}
+.logo {
+	width: 100%;
+	height: 130%;
+	position:absolute;
+	top:-15%;
+	left:0;
+	z-index:2000000;
+}
+.image {
+  width: 40vmin;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+.image[data-status="inactive"] {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.image[data-status="off"] {
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+.image[data-status="active"] {
+  display: block;
+  opacity:1;
+  transition: opacity 0.5s;
+}
+.container {
+	width: 100%;
+	height: 95vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.gallery {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.img-box {
+	width: 14vw;
+	height: 85vh;
+	margin: 10px;
+	border-radius: 50px;
+	background: url(photos/Q5A0363.jpg);
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	transition: width 0.5s;
+}
+.img-box:nth-child(1) {
+	background: url(photos/Q5A0363.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.img-box:nth-child(2) {
+	background: url(photos/Q5A0447.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.img-box:nth-child(3) {
+	background: url(photos/Q5A0416.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.img-box:nth-child(4) {
+	background: url(photos/Q5A0392.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.img-box p {
+	position: absolute;
+	bottom: 0;
+	left: 30px;
+	color: #fff;
+	opacity: 0;
+	transition: bottom 0.5s, opacity 0.5s;
+	font-family: manrope;
+}
+.img-box:hover {
+	width: 50vw;	
+	img-box:nth-child(1): width: 14vw;
+}
+.img-box:hover p {
+	opacity: 1;
+	bottom: 25px;
+}
+.menu-box {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.menu-photo {
+	width: 31vw;
+	position: relative;
+	border-radius: 30px;
+}
+.menu-text {
+	position: absolute;
+	color: #fff;
+	bottom: 0;
+	text-align: center;
+	font-family: manrope;
+	font-size: 35px;
+}
